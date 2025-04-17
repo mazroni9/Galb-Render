@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - name: Start Client and Backend
+  - name: Start Backend and Frontend
     command: |
       cd backend
       npm install
@@ -18,3 +18,6 @@ ports:
   - port: 4000
     onOpen: open-preview
     description: Backend
+  - port: 5432
+    onOpen: ignore
+    description: PostgreSQL (إذا كانت موجودة)
