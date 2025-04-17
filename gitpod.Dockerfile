@@ -1,9 +1,9 @@
 FROM node:18
 
-# تثبيت Vite (إذا كنت تستخدمه في الفرونت)
+# تثبيت Vite إن كنت تستخدمه في الواجهة
 RUN npm install -g vite
 
-# تثبيت أدوات مفيدة
+# تثبيت أدوات مساعدة
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -11,5 +11,5 @@ RUN apt-get update && apt-get install -y \
     postgresql \
     postgresql-client
 
-# مكان العمل
+# تحديد مجلد العمل
 WORKDIR /workspace
