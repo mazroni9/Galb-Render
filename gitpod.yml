@@ -15,7 +15,6 @@ ports:
   - port: 3000
     onOpen: open-preview
     description: Frontend
-
   - port: 4000
     onOpen: open-preview
     description: Backend
